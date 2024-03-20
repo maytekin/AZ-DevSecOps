@@ -26,7 +26,7 @@ resource "azurerm_storage_account" "storage_account" {
   name = random_string.storage_account_name.result
 
   account_tier             = "Standard"
-  account_replication_type = "LRS"
+  account_replication_type = "GRS"
   account_kind             = "StorageV2"
 
   static_website {
